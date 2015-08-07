@@ -1,5 +1,3 @@
-![](https://raw.githubusercontent.com/mokoaki/git_no_are/master/images/octocat.png)
-
 ##Gitのアレ
 http://marklodato.github.io/visual-git-guide/index-ja.html
 
@@ -327,6 +325,13 @@ checkout は大きく２つの機能がありますが、ここで説明する�
 もう少し覚えないとダメそうなコマンドがまだあります  
 
 その為にステージング領域あたりの説明をもう少し詳しくしましょう　そうしましょう  
+
+![](https://raw.githubusercontent.com/mokoaki/git_no_are/master/images/setumei1.png)ここに文字を書くと？
+
+
+
+
+
 
 **git reset**  
 **git commit --amend**  
