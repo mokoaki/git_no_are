@@ -64,12 +64,13 @@ git config --global color.ui true
 ```
 
 ####config、は設定のコマンドなんだろうけど、 --global って何？
-gitの設定は３箇所に保存されます。
-- リポジトリ (.git/config)
-- 今ログインしているユーザ (--grobal) (~/.gitconfig)
-- 今ログインしている環境全体 (--system) (/etc/gitconfig)
+gitの設定は
+- 今ログインしている環境全体 (--system) /etc/gitconfig
+- 今ログインしているユーザ (--grobal) ~/.gitconfig
+- リポジトリ (--local) .git/config
 
-の設定です。設定が重複したら上に書いたものが優先されます
+の３箇所に保存されます。  
+上から順番に読み込まれ、重複したら設定は上書きされます。つまり、下に書いたものが優先されます
 
 とりあえず、--grobal を使っておけば困る事はありません
 
