@@ -239,26 +239,26 @@ Date:   Wed Aug 5 11:17:35 2015 +0900
 「君が修正、追加、削除、ステージングしたファイルを、僕がどのように認識しているかを表示するよ！」  
 
 statusコマンドは現状の状態を確認できます。  
-どのファイルがステージング済みであり、どのファイルが変更されたのか、新規追加されたファイルをGitがどのように認識しているかを表示させます
+新規追加、修正済み、ステージング済み（コミット待ち）、削除済み、それらファイルをGitがどのように認識しているかを表示させます
 ```
 > git status
 
-On branch master     ●「現在は master ブランチに居ます（後ほど説明します）」
-Changes to be committed:     ●「コミット対象のファイル」（つまり、ステージング済み）」
-  (use "git reset HEAD <file>..." to unstage)     ●「このコマンドでステージング解除できます」（後ほど説明します。resetコマンドです）」
+On branch master     「現在は master ブランチに居ます（後ほど説明します）」
+Changes to be committed:     「コミット対象のファイル」（つまり、ステージング済み）」
+  (use "git reset HEAD <file>..." to unstage)     「このコマンドでステージング解除できます」（後ほど説明します。resetコマンドです）」
 
-  modified:   staged_file.txt     ●「修正済みファイル、staged_file.txt がステージング済みです」
+  modified:   staged_file.txt     「修正済みファイル、staged_file.txt がステージング済みです」
 
-Changes not staged for commit:     ●「修正されているが、ステージングされていないファイル」
-  (use "git add <file>..." to update what will be committed)     ●「add コマンドでステージングできます」
-  (use "git checkout -- <file>..." to discard changes in working directory)     ●「checkout コマンドで修正をなかったことにできます」（後ほど説明します）」
+Changes not staged for commit:     「修正されているが、ステージングされていないファイル」
+  (use "git add <file>..." to update what will be committed)     「add コマンドでステージングできます」
+  (use "git checkout -- <file>..." to discard changes in working directory)     「checkout コマンドで修正をなかったことにできます」（後ほど説明します）」
 
-  modified:   modified_file.txt     ●「modified_file.txt が修正済みです」
+  modified:   modified_file.txt     「modified_file.txt が修正済みです」
 
-Untracked files:     ●「管理されていないファイル（新規追加ファイル）」
-  (use "git add <file>..." to include in what will be committed)     ●「add コマンドでステージングできます」（新規追加時にもadd）」
+Untracked files:     「管理されていないファイル（新規追加ファイル）」
+  (use "git add <file>..." to include in what will be committed)     「add コマンドでステージングできます」（新規追加時にもadd）」
 
-  new_file.txt     ●「new_file.txt があるみたいです」
+  new_file.txt     「new_file.txt があるみたいです」
 ```
 
 **git diff**  
