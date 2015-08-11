@@ -92,27 +92,32 @@ git version 2.3.2 (Apple Git-55)
 ==========
 
 #### 初期設定
-```
-git config --global user.name mokoaki
-git config --global user.email mokoriso@gmail.com
-```
-
 Gitは誰がその作業をしたか全部記録しようとします。名前とメアドです  
 なので、最初に教えておく必要があります
+
 ```
-git config --global user.name homoaki
+> git config --global user.name mokoaki
+> git config --global user.email mokoriso@gmail.com
+```
+
+ちなみに設定はいつでも変更できます
+
+```
+> git config --global user.name homoaki
 
 # あっ、間違ったわ
 
-git config --global user.name mokoaki
+> git config --global user.name mokoaki
 ```
-という感じに、いつでも変更できます。  
+
+という感じです。  
 名前は気楽にハンドルネームとかで登録すればいいかと思います  
-これらの設定は、登録し直すまでずっと有効です。
+これらの設定は、上書きして登録し直なおすまでずっと有効です。
 
 あと、この設定をいれておくと、表示がカラフルになって見やすいのでオススメですよ  
+
 ```
-git config --global color.ui true
+> git config --global color.ui true
 ```
 
 ==========
