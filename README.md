@@ -65,7 +65,7 @@ git config --global color.ui true
 gitの設定は
 - 今ログインしている環境全体 (--system) /etc/gitconfig
 - 今ログインしているユーザ (--grobal) ~/.gitconfig
-- リポジトリ (--local) .git/config
+- リポジトリ毎 (--local) .git/config
 
 の３箇所に保存されます。  
 上から順番に読み込まれ、重複したら設定は上書きされます。  
