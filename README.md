@@ -74,6 +74,7 @@ Gitが情報を蓄える場所です
 ぐぐれ！
 
 - Windows
+  - 例えば http://git-scm.com/download/win
   - 例えば https://git-for-windows.github.io/
     - Additional Icons
       - プロンプトを起動するショートカットを作るかどうか。とりあえず作ればいいんじゃないか、要らなかったら消せばいいし
